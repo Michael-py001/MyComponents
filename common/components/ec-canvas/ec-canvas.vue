@@ -1,10 +1,10 @@
 <template>
   <view class="canvas-wrap">
     <!-- 新的：接口对其了H5 -->
-    <canvas v-show="isUseNewCanvas" type="2d" class="ec-canvas" :canvas-id="canvasId" @init="init" @touchstart="ec.disableTouch ? '' : 'touchStart' " @touchmove="ec.disableTouch ? '' : 'touchMove'" @touchend="ec.disableTouch ? '' : 'touchEnd'"></canvas>
+    <canvas v-show="isUseNewCanvas" type="2d" class="ec-canvas" :canvas-id="canvasId" @init="init" @touchstart="touchStart" @touchmove="touchMove" @touchend="touchEnd"></canvas>
     
     <!-- 旧的 -->
-    <canvas v-show="!isUseNewCanvas" class="ec-canvas" :canvas-id="canvasId" @init="init" @touchstart="ec.disableTouch ? '' : 'touchStart'" @touchmove="ec.disableTouch ? '' : 'touchMove'" @touchend="ec.disableTouch ? '' : 'touchEnd'"></canvas>
+    <canvas v-show="!isUseNewCanvas" class="ec-canvas" :canvas-id="canvasId" @init="init" @touchstart="touchStart" @touchmove="touchMove" @touchend="touchEnd"></canvas>
   </view>
 </template>
 
@@ -235,6 +235,7 @@
       },
     
       touchStart(e) {
+        console.log(e)
         if (this.chart && e.touches.length > 0) {
           var touch = e.touches[0];
           var handler = this.chart.getZr().handler;
@@ -294,9 +295,14 @@
 </script>
 
 <style lang="scss">
-  .ec-canvas {
-    width: 750rpx;
-    height: 750rpx;
+  .canvas-wrap {
+    width: 100%;
+    height: 100%;
   }
+ .ec-canvas {
+   width: 100%;
+   height: 100%;
+ }
+
   
 </style>

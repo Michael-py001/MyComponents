@@ -7,13 +7,13 @@
 <script>
   import ecCanvas from '../../../common/components/ec-canvas/ec-canvas.vue'
   import * as echarts from '../../../common/components/ec-canvas/echarts';
-  
+
   let chart = null;
   var option = {
     tooltip: {
       trigger: 'axis',
-      axisPointer: {            // 坐标轴指示器，坐标轴触发有效
-        type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+      axisPointer: { // 坐标轴指示器，坐标轴触发有效
+        type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
       },
       confine: true
     },
@@ -27,36 +27,33 @@
       top: 40,
       containLabel: true
     },
-    xAxis: [
-      {
-        type: 'value',
-        axisLine: {
-          lineStyle: {
-            color: '#999'
-          }
-        },
-        axisLabel: {
-          color: '#666'
+    xAxis: [{
+      type: 'value',
+      axisLine: {
+        lineStyle: {
+          color: '#999'
         }
+      },
+      axisLabel: {
+        color: '#666'
       }
-    ],
-    yAxis: [
-      {
-        type: 'category',
-        axisTick: { show: false },
-        data: ['汽车之家', '今日头条', '百度贴吧', '一点资讯', '微信', '微博', '知乎'],
-        axisLine: {
-          lineStyle: {
-            color: '#999'
-          }
-        },
-        axisLabel: {
-          color: '#666'
+    }],
+    yAxis: [{
+      type: 'category',
+      axisTick: {
+        show: false
+      },
+      data: ['汽车之家', '今日头条', '百度贴吧', '一点资讯', '微信', '微博', '知乎'],
+      axisLine: {
+        lineStyle: {
+          color: '#999'
         }
+      },
+      axisLabel: {
+        color: '#666'
       }
-    ],
-    series: [
-      {
+    }],
+    series: [{
         name: '热度',
         type: 'bar',
         label: {
@@ -107,6 +104,7 @@
       }
     ]
   };
+
   function initChart(canvas, width, height, dpr) {
     chart = echarts.init(canvas, null, {
       width: width,
@@ -114,12 +112,12 @@
       devicePixelRatio: dpr // new
     });
     canvas.setChart(chart);
-  
+
     var option = {
       tooltip: {
         trigger: 'axis',
-        axisPointer: {            // 坐标轴指示器，坐标轴触发有效
-          type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        axisPointer: { // 坐标轴指示器，坐标轴触发有效
+          type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
         },
         confine: true
       },
@@ -133,36 +131,33 @@
         top: 40,
         containLabel: true
       },
-      xAxis: [
-        {
-          type: 'value',
-          axisLine: {
-            lineStyle: {
-              color: '#999'
-            }
-          },
-          axisLabel: {
-            color: '#666'
+      xAxis: [{
+        type: 'value',
+        axisLine: {
+          lineStyle: {
+            color: '#999'
           }
+        },
+        axisLabel: {
+          color: '#666'
         }
-      ],
-      yAxis: [
-        {
-          type: 'category',
-          axisTick: { show: false },
-          data: ['汽车之家', '今日头条', '百度贴吧', '一点资讯', '微信', '微博', '知乎'],
-          axisLine: {
-            lineStyle: {
-              color: '#999'
-            }
-          },
-          axisLabel: {
-            color: '#666'
+      }],
+      yAxis: [{
+        type: 'category',
+        axisTick: {
+          show: false
+        },
+        data: ['汽车之家', '今日头条', '百度贴吧', '一点资讯', '微信', '微博', '知乎'],
+        axisLine: {
+          lineStyle: {
+            color: '#999'
           }
+        },
+        axisLabel: {
+          color: '#666'
         }
-      ],
-      series: [
-        {
+      }],
+      series: [{
           name: '热度',
           type: 'bar',
           label: {
@@ -213,131 +208,130 @@
         }
       ]
     };
-  
+
     chart.setOption(option);
     return chart;
   }
   export default {
-    components:{
+    components: {
       ecCanvas
     },
-    data(){
+    data() {
       return {
-        ec:{
+        ec: {
           option: option,
         }
-        
+
       }
     },
-    computed:{
-    },
+    computed: {},
     methods: {
       createChart() {
         var option = {
-          tooltip: {
-            trigger: 'axis',
-            axisPointer: {            // 坐标轴指示器，坐标轴触发有效
-              type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+            tooltip: {
+              trigger: 'axis',
+              axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+              },
+              confine: true
             },
-            confine: true
-          },
-          legend: {
-            data: ['热度', '正面', '负面']
-          },
-          grid: {
-            left: 20,
-            right: 20,
-            bottom: 15,
-            top: 40,
-            containLabel: true
-          },
-          xAxis: [
-            {
-              type: 'value',
-              axisLine: {
-                lineStyle: {
-                  color: '#999'
-                }
-              },
-              axisLabel: {
-                color: '#666'
-              }
-            }
-          ],
-          yAxis: [
-            {
-              type: 'category',
-              axisTick: { show: false },
-              data: ['汽车之家', '今日头条', '百度贴吧', '一点资讯', '微信', '微博', '知乎'],
-              axisLine: {
-                lineStyle: {
-                  color: '#999'
-                }
-              },
-              axisLabel: {
-                color: '#666'
-              }
-            }
-          ],
-          series: [
-            {
-              name: '热度',
-              type: 'bar',
-              label: {
-                normal: {
-                  show: true,
-                  position: 'inside'
-                }
-              },
-              data: [300, 270, 340, 344, 300, 320, 310],
-              itemStyle: {
-                // emphasis: {
-                //   color: '#37a2da'
-                // }
-              }
+            legend: {
+              data: ['热度', '正面', '负面']
             },
-            {
-              name: '正面',
-              type: 'bar',
-              stack: '总量',
-              label: {
-                normal: {
-                  show: true
-                }
-              },
-              data: [120, 102, 141, 174, 190, 250, 220],
-              itemStyle: {
-                // emphasis: {
-                //   color: '#32c5e9'
-                // }
-              }
+            grid: {
+              left: 20,
+              right: 20,
+              bottom: 15,
+              top: 40,
+              containLabel: true
             },
-            {
-              name: '负面',
-              type: 'bar',
-              stack: '总量',
-              label: {
-                normal: {
-                  show: true,
-                  position: 'left'
+            xAxis: [
+              {
+                type: 'value',
+                axisLine: {
+                  lineStyle: {
+                    color: '#999'
+                  }
+                },
+                axisLabel: {
+                  color: '#666'
+                }
+              }
+            ],
+            yAxis: [
+              {
+                type: 'category',
+                axisTick: { show: false },
+                data: ['汽车之家', '今日头条', '百度贴吧', '一点资讯', '微信', '微博', '知乎'],
+                axisLine: {
+                  lineStyle: {
+                    color: '#999'
+                  }
+                },
+                axisLabel: {
+                  color: '#666'
+                }
+              }
+            ],
+            series: [
+              {
+                name: '热度',
+                type: 'bar',
+                label: {
+                  normal: {
+                    show: true,
+                    position: 'inside'
+                  }
+                },
+                data: [300, 270, 340, 344, 300, 320, 310],
+                itemStyle: {
+                  // emphasis: {
+                  //   color: '#37a2da'
+                  // }
                 }
               },
-              data: [-20, -32, -21, -34, -90, -130, -110],
-              itemStyle: {
-                // emphasis: {
-                //   color: '#67e0e3'
-                // }
+              {
+                name: '正面',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                  normal: {
+                    show: true
+                  }
+                },
+                data: [120, 102, 141, 174, 190, 250, 220],
+                itemStyle: {
+                  // emphasis: {
+                  //   color: '#32c5e9'
+                  // }
+                }
+              },
+              {
+                name: '负面',
+                type: 'bar',
+                stack: '总量',
+                label: {
+                  normal: {
+                    show: true,
+                    position: 'left'
+                  }
+                },
+                data: [-20, -32, -21, -34, -90, -130, -110],
+                itemStyle: {
+                  // emphasis: {
+                  //   color: '#67e0e3'
+                  // }
+                }
               }
-            }
-          ]
-        };
+            ]
+          };
         this.$refs.chart.init(config => {
-          console.log("config:",config)
+          console.log("config:", config)
           const {
             canvas
           } = config;
           const chart = echarts.init(canvas, null, config);
-          
+
           canvas.setChart(chart);
           chart.setOption(option);
           // 需要把 chart 返回
@@ -345,18 +339,33 @@
         });
       }
     },
-     onReady() {
-       // 创建方式一 ec:{option} 传入配置数据 直接init
-       // this.$refs.chart.init()
-       
-       //创建方式二 在函数里初始化 并传入配置数据
-       this.createChart()
-      }
+    onReady() {
+      // 创建方式一 ec:{option} 传入配置数据 直接init
+      // this.$refs.chart.init()
+
+      //创建方式二 在函数里初始化 并传入配置数据
+      this.createChart()
+    }
   }
 </script>
 
 <style lang="scss" scoped>
-  .item{
-    
+
+  ec-canvas {
+    width: 100%;
+    height: 100%;
   }
+  .container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+  } 
 </style>
