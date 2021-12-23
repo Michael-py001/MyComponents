@@ -39,6 +39,10 @@
             title:'数据加载状态',
             path:'PageEnd' 
           },
+          {
+            title:'自定义顶部导航',
+            path:'TopColumn' 
+          },
         ]
 			}
 		},

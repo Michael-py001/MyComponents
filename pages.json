@@ -58,7 +58,14 @@
         "navigationBarTitleText": "数据加载状态",
         "enablePullDownRefresh": false
       }
-    
+    },
+    {
+      "path": "TopColumn/TopColumn",
+      "style": {
+        "navigationBarTitleText": "顶部导航",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
     }
     ]
   }],
