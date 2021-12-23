@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "表单",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "form": "/pages/components/Form/components/Form",
+    "i-d-card-upload": "/pages/components/Form/components/IDCardUpload",
+    "check": "/pages/components/Form/components/Checkbox/Checkbox",
+    "city-picker": "/pages/components/Form/components/CityPicker/CityPicker",
+    "address-select": "/pages/components/Form/components/AddressSelect",
+    "choose-images": "/pages/components/Form/components/ChooseImages",
+    "choose-number": "/pages/components/Form/components/ChooseNumber",
+    "choose-express-time": "/pages/components/Form/components/ChooseExpressTime",
+    "choose-popup": "/pages/components/Form/components/ChoosePopup"
+  }
+}

@@ -1,0 +1,48 @@
+//$primaryColor  主体色/渐变色深色   tip: 需在utils/Config.js配置相同主题色
+//$primaryGradualColor  渐变色浅色
+//$backgroundOColor  主题背景色
+//$backgroundColorOpacity  主题背景色浅
+
+$primaryColor:#FF4A34;
+$primaryGradualColor:#FF5872;
+
+$dealerColor: #8D5B20;
+$cartColor:#ffab1a;
+$cartGradualColor:#ffc757;
+$skuItemColor:$primaryColor;
+
+$backgroundColor:#f9f9f9;
+$shallowTextColor: #b2b2b2;
+
+$backgroundOColor:rgba(255, 48, 41, 0.2);
+$backgroundOColorTwo:rgba(255, 44, 76, 0.2);
+$backgroundOColorThree:rgba(255, 193, 22, 0.2);
+$backgroundColorOpacity: rgba(255, 48, 41, 0.1);
+$dealerBackgroundColor: rgba(233,204,138,0.26);
+
+
+
+$boxShadow:0upx 6upx 14upx 0upx $backgroundOColor;  
+$boxShadowTwo:0upx 6upx 14upx 0upx $backgroundOColorTwo;
+$boxShadowThree:0upx 6upx 14upx 0upx $backgroundOColorThree;
+// $dealerShadow: 0px 10px 26px 0px $dealerBackgroundColor;
+
+$GradualColor:linear-gradient(-90deg,
+								$primaryColor 0%,
+								$primaryGradualColor 100%),
+								linear-gradient($primaryColor,
+								$primaryColor);
+								
+$GradualColorTwo:linear-gradient(270deg,
+								$primaryColor 0%,
+								$primaryGradualColor 100%),
+								linear-gradient($primaryColor,
+								$primaryColor);
+								
+$GradualColorThree:linear-gradient(-90deg,
+								$cartColor 0%,
+								$cartGradualColor 100%),
+								linear-gradient($cartColor,
+								$cartColor);
+								
+$GradualColorFour: linear-gradient(270deg,#e9cc8a, #e9cc8a, #f3deaf);

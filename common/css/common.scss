@@ -1,0 +1,12 @@
+.placeholderClass {
+  color: #B2B2B2;
+}
+.none-button{
+	background-color:transparent;
+}
+.none-button::before{
+	border: none;
+}
+.none-button::after{
+	border: none;
+}

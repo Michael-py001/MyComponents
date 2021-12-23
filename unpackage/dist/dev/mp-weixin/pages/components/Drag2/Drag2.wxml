@@ -1,0 +1,1 @@
+<view style="margin-top:50px;"><pretty-change vue-id="685538f9-1" list="{{list}}" data-event-opts="{{[['^change',[['change']]]]}}" bind:change="__e" bind:__l="__l"></pretty-change></view>

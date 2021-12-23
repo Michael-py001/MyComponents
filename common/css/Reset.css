@@ -1,0 +1,87 @@
+page {
+	background: #f9f9f9;
+	word-break: break-word;
+}
+text,
+button,
+image,
+textarea,
+view,
+scroll-view,input {
+	box-sizing: border-box;
+}
+uni-button,
+button {
+  width: 100%;
+	padding: 0;
+	border-radius: 0;
+	background-color: transparent;
+}
+uni-button:after,
+button::after {
+	border: none !important;
+	background-color: transparent;
+}
+uni-button:active,
+uni-button:hover,
+button:active,
+button:hover{
+	/* background-color: transparent; */
+	outline: none;
+}
+image {
+	vertical-align: middle;
+}
+textarea,
+.textarea {
+	height: 245rpx;
+	background: #fafafa;
+	border-radius: 10rpx;
+	width: 100%;
+	font-size: 30rpx;
+	padding: 25rpx 30rpx 0;
+	box-sizing: border-box;
+}
+.right-icon {
+	width: 12rpx;
+	height: 20rpx;
+}
+.tabbar-item {
+	line-height: 1.2;
+	font-size: 24rpx;
+}
+.tabbar-item-img {
+	width: 44rpx !important;
+	height: 22rpx !important;
+}
+view {
+	line-height: 1.1;
+}
+.end-bottom {
+	width: 191rpx;
+	height: 20rpx;
+	display: block;
+	margin: 50rpx auto;
+}
+.page {
+	padding: 0 30rpx;
+	width: 100vw;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.input-placeholder,
+.textarea-placeholder{
+	color: #b2b2b2;
+	font-weight: normal !important;
+}
+/* 滚动条隐藏 */
+::-webkit-scrollbar {
+	display: none;
+}
+::-webkit-scrollbar-track {
+	display: none;
+}
+::-webkit-scrollbar-thumb {
+	display: none;
+}

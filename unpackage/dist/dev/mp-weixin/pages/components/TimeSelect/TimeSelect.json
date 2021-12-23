@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "自定义时间选择弹窗",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "my-calendar": "/pages/components/TimeSelect/components/MyCalendar",
+    "date-calendar": "/pages/components/TimeSelect/components/DateCalendar"
+  }
+}

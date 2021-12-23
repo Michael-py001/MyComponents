@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "数据加载状态",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "page-end": "/pages/components/PageEnd/components/PageEnd"
+  }
+}

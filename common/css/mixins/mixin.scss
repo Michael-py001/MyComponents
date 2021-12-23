@@ -1,0 +1,41 @@
+// 苹果安全底部高度
+@mixin saveBottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+@mixin btn-shadow($lrColor: $GradualColor, $bsColor: $backgroundOColor) {
+	background-blend-mode: normal, normal;
+	box-shadow: 0upx 6upx 14upx 0upx $bsColor;
+	background-image: $lrColor;
+}
+// 单行省略号
+@mixin lineClamp() {  //@include lineClamp使用
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+@mixin ellipsis($lineClamp: 1){
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: $lineClamp;
+	line-clamp: $lineClamp;
+	-webkit-box-orient: vertical;
+	word-break: break-word;
+}
+@mixin arrow-right {
+  &::after {
+    content: '';
+    width: 19rpx;
+    height: 26rpx;
+    margin-left: 8rpx;
+    display: inline-block;
+    // background-color: blue;
+    background-image: url(/static/images/icon/arrow-right.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-top: 4rpx;
+  }
+}

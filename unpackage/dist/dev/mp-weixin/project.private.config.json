@@ -1,0 +1,54 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "自定义时间选择弹窗",
+          "pathName": "pages/components/TimeSelect/TimeSelect",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "自定义下拉筛选",
+          "pathName": "pages/components/OptionsSelect/OptionsSelect",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "拖拽排序",
+          "pathName": "pages/components/Drag/Drag",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "Echart图表",
+          "pathName": "pages/components/Echart/Echart",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "表单",
+          "pathName": "pages/components/Form/Form",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "数据加载状态",
+          "pathName": "pages/components/PageEnd/PageEnd",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,66 @@
+// @import './font/wechatNumber/wechatNumber.scss';
+@import './theme-scss/red.scss';
+// @import './theme/cyan.scss';
+// @import './theme-scss/cunpingtong.scss';
+
+$textColor:#333333;
+$textSecondColor:#666666;
+$textThirdColor:#999999;
+$emptyColor: #d1d1d1;
+
+// 苹果安全底部高度
+$saveBottom:env(safe-area-inset-bottom);
+.uni-modal__btn {
+	height: 88upx !important;
+	line-height: 88upx !important;
+}
+.uni-actionsheet__cell{
+	padding: 30upx !important;
+}
+
+.text-over {
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.flex-cc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-c {
+	display: flex;
+	align-items: center;
+}
+
+
+image {
+	vertical-align: middle;
+}
+textarea,
+.textarea {
+	height: 245rpx;
+	background: #fafafa;
+	border-radius: 10rpx;
+	width: 100%;
+	font-size: 30rpx;
+	padding: 25rpx 30rpx 0;
+	box-sizing: border-box;
+}
+
+view {
+	line-height: 42upx;
+	font-size: 28upx;
+}
+
+div{
+	line-height: 42upx;
+	font-size: 28upx;
+}
+
