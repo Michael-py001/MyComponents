@@ -1,1 +1,0 @@
-<view class="container data-v-2ba1480f"><ec-canvas vue-id="48883ad7-1" id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ec}}" data-ref="chart" class="data-v-2ba1480f vue-ref" bind:__l="__l"></ec-canvas></view>

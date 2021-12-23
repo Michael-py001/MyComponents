@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "Drag-h-m-drag-sorts-rowContent": "/pages/components/Drag/Drag-h-m-drag-sorts-rowContent",
-    "h-m-drag-sorts": "/uni_modules/HM-dragSorts/components/HM-dragSorts/HM-dragSorts"
-  }
-}

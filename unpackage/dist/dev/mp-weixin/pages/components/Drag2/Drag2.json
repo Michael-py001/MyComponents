@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "拖拽排序2",
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "pretty-change": "/pages/components/Drag2/pretty-exchange/pretty-exchange"
-  }
-}

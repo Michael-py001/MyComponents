@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "自定义下拉筛选",
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "options-select": "/pages/components/OptionsSelect/components/li-OptionsSelect",
-    "filter": "/pages/components/OptionsSelect/components/filter"
-  }
-}

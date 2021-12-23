@@ -1,8 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup",
-    "c-button": "/common/components/button/button",
-    "my-calendar": "/pages/components/OptionsSelect/components/MyCalendar"
-  }
-}

@@ -1,1 +1,0 @@
-<view class="row data-v-5f89626f"><block wx:if="{{row.icon}}"><image class="icon data-v-5f89626f" src="{{row.icon}}"></image></block><text class="text data-v-5f89626f">{{row.name}}</text></view>
