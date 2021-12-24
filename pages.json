@@ -8,67 +8,92 @@
     }
   ],
   "subPackages": [{
-    "root": "pages/components",
-    "pages": [{
-      "path": "TimeSelect/TimeSelect",
-      "style": {
-        "navigationBarTitleText": "自定义时间选择弹窗",
-        "enablePullDownRefresh": false
-      }
+      "root": "pages/EchartDemo/pages/",
+      "pages": [{
+        "path": "Zhu_One/Zhu_One",
+        "style": {
+          "navigationBarTitleText": "柱状图-one",
+          "enablePullDownRefresh": false
+        }
+      }, {
+        "path": "Zhu_Two/Zhu_Two",
+        "style": {
+          "navigationBarTitleText": "柱状图2",
+          "enablePullDownRefresh": false
+        }
 
-    }, {
-      "path": "OptionsSelect/OptionsSelect",
-      "style": {
-        "navigationBarTitleText": "自定义下拉筛选",
-        "enablePullDownRefresh": false
-      }
+      }, {
+        "path": "ZheXian_One/ZheXian_One",
+        "style": {
+          "navigationBarTitleText": "折线图-1",
+          "enablePullDownRefresh": false
+        }
 
-    }, {
-      "path": "Drag/Drag",
-      "style": {
-        "navigationBarTitleText": "拖拽排序",
-        "enablePullDownRefresh": false
-      }
-
-    }, {
-      "path": "Drag2/Drag2",
-      "style": {
-        "navigationBarTitleText": "拖拽排序2",
-        "enablePullDownRefresh": false
-      }
-
-    }, {
-      "path": "Echart/Echart",
-      "style": {
-        "navigationBarTitleText": "echart图表",
-        "enablePullDownRefresh": false
-      }
-
-    }, {
-      "path": "Form/Form",
-      "style": {
-        "navigationBarTitleText": "表单",
-        "enablePullDownRefresh": false
-      }
-
+      }]
     },
     {
-      "path": "PageEnd/PageEnd",
-      "style": {
-        "navigationBarTitleText": "数据加载状态",
-        "enablePullDownRefresh": false
-      }
-    },
-    {
-      "path": "TopColumn/TopColumn",
-      "style": {
-        "navigationBarTitleText": "顶部导航",
-        "enablePullDownRefresh": false,
-        "navigationStyle": "custom"
-      }
+      "root": "pages/components",
+      "pages": [{
+          "path": "TimeSelect/TimeSelect",
+          "style": {
+            "navigationBarTitleText": "自定义时间选择弹窗",
+            "enablePullDownRefresh": false
+          }
+
+        }, {
+          "path": "OptionsSelect/OptionsSelect",
+          "style": {
+            "navigationBarTitleText": "自定义下拉筛选",
+            "enablePullDownRefresh": false
+          }
+
+        }, {
+          "path": "Drag/Drag",
+          "style": {
+            "navigationBarTitleText": "拖拽排序",
+            "enablePullDownRefresh": false
+          }
+
+        }, {
+          "path": "Drag2/Drag2",
+          "style": {
+            "navigationBarTitleText": "拖拽排序2",
+            "enablePullDownRefresh": false
+          }
+
+        }, {
+          "path": "Echart/Echart",
+          "style": {
+            "navigationBarTitleText": "echart图表",
+            "enablePullDownRefresh": false
+          }
+
+        }, {
+          "path": "Form/Form",
+          "style": {
+            "navigationBarTitleText": "表单",
+            "enablePullDownRefresh": false
+          }
+
+        },
+        {
+          "path": "PageEnd/PageEnd",
+          "style": {
+            "navigationBarTitleText": "数据加载状态",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "TopColumn/TopColumn",
+          "style": {
+            "navigationBarTitleText": "顶部导航",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+          }
+        }
+      ]
     }
-    ]
-  }],
+  ],
 
   "globalStyle": {
     "navigationBarTextStyle": "black",
