@@ -90,6 +90,20 @@
             "enablePullDownRefresh": false,
             "navigationStyle": "custom"
           }
+        },
+        {
+          "path": "AvatarList/AvatarList",
+          "style": {
+            "navigationBarTitleText": "头像列表",
+            "enablePullDownRefresh": false
+          }
+        }, {
+          "path": "MoveCard/MoveCard",
+          "style": {
+            "navigationBarTitleText": "滑动卡片",
+            "enablePullDownRefresh": false
+          }
+
         }
       ]
     }

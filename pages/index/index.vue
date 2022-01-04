@@ -5,7 +5,6 @@
 		</view>
 	</view>
 </template>
-
 <script>
 	export default {
 		data() {
@@ -43,6 +42,15 @@
             title:'自定义顶部导航',
             path:'TopColumn' 
           },
+          {
+            title:'头像列表',
+            path:'AvatarList' 
+          },
+          {
+            title:'滑动卡片',
+            path:'MoveCard' 
+            
+          }
         ]
 			}
 		},
